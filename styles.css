@@ -34,6 +34,12 @@
     font-style: italic;
   }
 
+  .passions-conflict-regular {
+    font-family: "Passions Conflict", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
 *{
     font-family: "Crimson Text", serif;
     line-height: 1.5;
@@ -48,21 +54,20 @@
 }
 
 h1{
+    font-family: "Passions Conflict", cursive;
     font-style: italic;
-    font-size: 25px;
-    text-align: left;
+    font-size: 70px;
+    text-align: center;
     font-weight: 500;
     margin: 10px 0 0;
-    padding-left: 40px;
     padding-top: 100px;
 }
 
 h2{
     font-size: 70px;
-    text-align: left;
+    text-align: center;
     font-weight: 500;
     margin: 10px 0 0;
-    padding-left: 40px;
 }
 
 h3{
@@ -70,18 +75,16 @@ h3{
     text-align: center;
     font-weight: 500;
     margin: 10px 0 0;
-    padding-left: 40px;
     padding-top: 40px;
 }
 
 h4{
     font-style: italic;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     font-weight: 500;
     margin: 10px 0 0;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 60px;
 }
 
 p{
@@ -90,7 +93,12 @@ p{
     text-align: center;
     font-weight: 500;
     margin: 10px 0 0;
-    padding-left: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+speakers{
+    justify-content: space-evenly;
 }
 
 body{
@@ -119,7 +127,33 @@ nav ul li a{
     font-weight: bold;
     border: 2px solid #ffffff;
     border-radius: 6cm;
-    
+
+}
+
+body ul{
+    font-style: normal;
+    text-decoration: none;
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+    margin: 0;
+    padding-top: 30px;
+}
+
+body ul li a{
+    font-style: normal;
+    padding: 8px 35px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.87);
+    font-weight: bold;
+    border: 2px solid #ffffff;
+    border-radius: 6cm;
+  
+}
+
+img{
+    justify-content: center;
 }
 
 @keyframes twinkle {
