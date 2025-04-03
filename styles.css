@@ -4,6 +4,8 @@ html {
     padding: 0;
     width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+
 }
 
 body{
@@ -79,7 +81,7 @@ nav {
     padding-left: 60px;
 }
 
-/* .nav-links {
+.nav-links {
     list-style: none;
     display: flex;
     gap: 90px;
@@ -96,7 +98,7 @@ nav {
     color: rgba(255, 255, 255, 0.87);
     font-weight: normal;
     font-size: 22px;
-} */
+}
 
 
 
@@ -159,6 +161,17 @@ nav {
     margin-left: -20px;
     margin-top: -5px;
 }
+
+
+
+
+/* #registerbutton {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+
+}
+ */
 
 
 
@@ -284,9 +297,6 @@ animation: twinkle 3.5s infinite alternate ease-in-out;
 .bottom_sparkle_4 { width: 20px; bottom: -66%; right: 10%; }
 .bottom_sparkle_5 { width: 50px; bottom: -50%; right: 20%; }
 
-html{
-    scroll-behavior: smooth;
-}
 
 
 
