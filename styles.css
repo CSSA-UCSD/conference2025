@@ -1,7 +1,11 @@
 /* body */
-html, body {
+html {
+    margin: 0;
+    padding: 0;
     width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+
 }
 
 body{
@@ -55,13 +59,18 @@ img{
 
 /* for the navbar */
 nav {
-    padding-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    max-width: 100%;
+    padding-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
-    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
 
@@ -156,13 +165,26 @@ nav {
 
 
 
-/* #registerbutton {
-    color: black;
+#registerbutton {
+    color: rgba(255, 255, 255, 0.6);
     font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
-
+    font-size: 20px;
+    padding: 5px 15px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    background: transparent;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    width: auto;
+    white-space: nowrap;
 }
- */
+
+#registerbutton:hover {
+    color: rgba(255, 255, 255, 0.8);
+    border-color: rgba(255, 255, 255, 0.8);
+}
 
 
 
