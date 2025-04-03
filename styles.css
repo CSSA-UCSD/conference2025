@@ -99,7 +99,8 @@ nav {
 .logo img {
     height: 40px;
     width: auto;
-    padding-top: 25px;
+    padding-top: 30px;
+    margin-top: 5px;
     padding-left: 60px; /* Adjust for positioning */
 }
 
