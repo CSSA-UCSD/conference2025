@@ -78,6 +78,7 @@ img{
 
 
 /* for the navbar */
+/* for the navbar */
 nav {
     position: absolute;
     top: 0;
@@ -85,40 +86,44 @@ nav {
     right: 0;
     width: 100%;
     max-width: 100%;
-    padding: 20px 15px 0;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /* Space out the logo and nav links */
+    align-items: center; /* Vertically center the items */
     box-sizing: border-box;
 }
 
+/* Logo image */
 .logo img {
     height: 40px;
     width: auto;
-    padding-top: 0;
-    padding-left: 0;
-    margin-right: 15px;
+    padding-top: 20px;
+    padding-left: 60px; /* Adjust for positioning */
 }
 
+/* Nav Links */
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 10px;
     margin: 0;
     padding: 0;
     flex-wrap: nowrap;
-    padding-top: 0;
-    padding-right: 0;
+    padding-top: 25px;
+    padding-right: 20px;
 }
 
+/* Nav Links Styling */
 .nav-links li a {
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.87);
     font-weight: normal;
     font-size: 22px;
-    display: block;
 }
+
 
 
 
@@ -147,7 +152,7 @@ nav {
 #intro1 {
     font-family: "Passions Conflict", cursive;
     font-style: italic;
-    font-size: 80px;
+    font-size: 90px;
     font-weight: 500;
     text-align: center;
     margin-left: -20px;
@@ -156,7 +161,7 @@ nav {
 }
 
 #intro2 {
-    font-size: 70px;
+    font-size: 80px;
     font-weight: 600;
     text-align: center;
     margin-left: -20px;
@@ -187,7 +192,7 @@ nav {
 #registerbutton {
     color: rgba(255, 255, 255, 0.6);
     font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     padding: 5px 15px;
     border: 2px solid rgba(255, 255, 255, 0.6);
     background: transparent;
