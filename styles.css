@@ -59,7 +59,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding-left: 15px;
-    /* padding-right: 15px; */
+    padding-right: 15px;
     max-width: 100%;
 }
 
@@ -75,7 +75,7 @@ nav {
     padding-left: 60px;
 }
 
-.nav-links {
+/* .nav-links {
     list-style: none;
     display: flex;
     gap: 90px;
@@ -83,7 +83,7 @@ nav {
     padding: 0;
     flex-wrap: nowrap;
     padding-top: 25px;
-    /* padding-right: 60px; */
+    padding-right: 60px;
 }
 
 .nav-links li a {
@@ -92,7 +92,7 @@ nav {
     color: rgba(255, 255, 255, 0.87);
     font-weight: normal;
     font-size: 22px;
-}
+} */
 
 
 
