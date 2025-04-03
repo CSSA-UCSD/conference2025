@@ -115,7 +115,7 @@ body{
   }
   
   body {
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
