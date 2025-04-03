@@ -2,7 +2,7 @@
 body{
     font-style: normal;
     text-align: center;
-    margin:10;
+    margin: 10px;
     background: linear-gradient(145deg, #072101 0%, #402EA1 26%, #501d7c 48%, #4412C5 88%, #4B21E3 100%);
     overflow-x: hidden;
     overflow-y: scroll;
@@ -20,8 +20,8 @@ body ul{
     font-style: normal;
     text-decoration: none;
     list-style: none;
-    display:flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0;
     padding-top: 30px;
 }
@@ -63,6 +63,11 @@ nav {
     max-width: 100%;
 }
 
+nav {
+    width: 100vw; /* Viewport width */
+    overflow: hidden;
+}
+
 .logo img {
     height: 40px;  
     width: auto;  
@@ -86,13 +91,8 @@ nav {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.87);
     font-weight: normal;
-
-}
-
-.nav-links li a {
     font-size: 22px;
 }
-
 
 
 
