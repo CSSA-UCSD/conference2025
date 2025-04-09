@@ -495,4 +495,14 @@ animation: twinkle 3.5s infinite alternate ease-in-out;
       flex: 0 0 240px;
     }
   }
+
+  .carousel-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    gap: 16px;
+  }
+  
   
