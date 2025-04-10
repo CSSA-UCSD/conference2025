@@ -476,17 +476,29 @@ animation: twinkle 3.5s infinite alternate ease-in-out;
   }
   
   .carousel-btn {
-    background: none;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     border: none;
     color: white;
-    font-size: 3rem; /* was 2.2rem — now bigger! */
+    font-size: 4rem; /* Increase the font size */
     cursor: pointer;
     user-select: none;
     z-index: 2;
-    padding: 0 1rem; /* adds a bit of breathing room */
+    padding: 1rem; /* Increase padding for a larger button */
     font-weight: bold;
-  }  
-  
+    border-radius: 50%; /* Make the buttons circular */
+    transition: background 0.3s ease, transform 0.3s ease; /* Add transition for hover effects */
+}
+
+.carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+.carousel-btn:focus {
+    outline: none; /* Remove outline on focus */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* Add a glowing outline effect when focused */
+}
+
   @media screen and (max-width: 768px) {
     .carousel {
       max-width: 500px;
@@ -504,5 +516,4 @@ animation: twinkle 3.5s infinite alternate ease-in-out;
     white-space: nowrap;
     gap: 16px;
   }
-  
   

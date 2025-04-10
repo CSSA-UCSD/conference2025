@@ -70,70 +70,62 @@
             </div> -->
 
             <h4>Day 1</h4>
-<div class="carousel-wrapper">
-    <button class="carousel-btn prev" onclick="scrollCarousel('day1-carousel', -1)">‹</button>
-    <div class="carousel" id="day1-carousel">
-        <div class="speaker-card">
-            <img src="assets/speakers/placeholder_speaker.png" height="200px" alt="Amon Neequaye">
-            <p>Amon<br> Neequaye</p>
-        </div>
-        <div class="speaker-card">
-            <img src="assets/speakers/ColeB.jpg" height="200px" alt="Cole Biehle">
-            <p>Cole<br> Biehle</p>
-        </div>
-        <div class="speaker-card">
-            <img src="assets/speakers/placeholder_speaker.png" height="200px" alt="Julia Larina">
-            <p>Julia<br> Larinae</p>
-        </div>
-            <div class="speaker-card">
-                <img src="assets/speakers/AnindyaPhoto.jpg" height="200px" alt="Anindya Basu">
-                <p>Anindya<br> Basu</p>
-        </div>
-            <div class="speaker-card">
-                <img src="assets/speakers/AlanPhoto.jpg" height="200px" alt="Alan (Design Speaker)">
-                <p>Alan<br> (Design Speaker)</p>
-        </div>
-    </div>
-    <button class="carousel-btn next" onclick="scrollCarousel('day1-carousel', 1)">›</button>
-</div>
-
+            <div class="carousel-wrapper">
+                <button class="carousel-btn prev" onclick="scrollCarousel(-1)">‹</button>
+                <div class="carousel" id="day1-carousel"></div>
+                <button class="carousel-btn next" onclick="scrollCarousel(1)">›</button>
+            </div>
             
-            <!-- <img src="assets/speakers/placeholder_speaker.png" height="200px">
-            <img src="assets/speakers/placeholder_speaker.png" height="200px">
-            <img src="assets/speakers/placeholder_speaker.png" height="200px">
-            <img src="assets/speakers/placeholder_speaker.png" height="200px">
-            <img src="assets/speakers/placeholder_speaker.png" height="200px"> -->
+            <script>
+                const container1 = document.getElementById("day1-carousel");
+                const cardWidth = 300;
+                const scrollStep = cardWidth;
+            
+                const speakerHTML1 = `
+                    <div class="speaker-card">
+                        <img src="assets/speakers/AmonSpeaker.jpg" height="200px" alt="Amon Neequaye">
+                        <p>Amon<br> Neequaye</p>
+                    </div>
+                    <div class="speaker-card">
+                        <img src="assets/speakers/ColeB.jpg" height="200px" alt="Cole Biehle">
+                        <p>Cole<br> Biehle</p>
+                    </div>
+                    <div class="speaker-card">
+                        <img src="assets/speakers/placeholder_speaker.png" height="200px" alt="Julia Larina">
+                        <p>Julia<br> Larina</p>
+                    </div>
+                    <div class="speaker-card">
+                        <img src="assets/speakers/AnindyaPhoto.jpg" height="200px" alt="Anindya Basu">
+                        <p>Anindya<br> Basu</p>
+                    </div>
+                    <div class="speaker-card">
+                        <img src="assets/speakers/AlanPhoto.jpg" height="200px" alt="Alan (Design Speaker)">
+                        <p>Alan<br> (Design Speaker)</p>
+                    </div>
+                `;
+            
+                const copies = 20; // Adjust as needed
+                container1.innerHTML = speakerHTML1.repeat(copies);
+            
+                function scrollCarousel(direction) {
+                    container1.scrollBy({ left: direction * scrollStep, behavior: 'smooth' });
+                }
+            </script>
+            
             <br>
             <br>
-            <!-- <h4>Day 2</h4>
-            <div class="speakers-container">
-                <div class="speaker">
-                    <img src="assets/speakers/placeholder_speaker.png" height="200px" alt="Speaker 1">
-                    <p>(Jerry (ML Speaker)</p>
-                </div>
-                <div class="speaker">
-                    <img src="assets/speakers/ZachariahPhoto.jpg" height="200px" alt="Speaker 2">
-                    <p>Zachariah Gutierrez</p>
-                </div>
-                <div class="speaker">
-                    <img src="assets/speakers/placeholder_speaker.png" height="200px" alt="Speaker 3">
-                    <p>Daniel Maryanovsk</p>
-                </div>
-                <div class="speaker">
-                    <img src="assets/speakers/placeholder_speaker.png" height="200px" alt="Speaker 3">
-                    <p>Prince Ghuman</p>
-                </div>
-            </div> -->
-            <!-- <img src="assets/speakers/placeholder_speaker.png" height="200px">
-            <img src="assets/speakers/placeholder_speaker.png" height="200px">
-            <img src="assets/speakers/placeholder_speaker.png" height="200px">
-            <img src="assets/speakers/placeholder_speaker.png" height="200px">
-            <img src="assets/speakers/placeholder_speaker.png" height="200px"> -->
-         
+            
             <h4>Day 2</h4>
             <div class="carousel-wrapper">
-                <button class="carousel-btn prev" onclick="scrollCarousel('day2-carousel', -1)">‹</button>
-                <div class="carousel" id="day2-carousel">
+                <button class="carousel-btn prev" onclick="scrollCarouselDay2(-1)">‹</button>
+                <div class="carousel" id="day2-carousel"></div>
+                <button class="carousel-btn next" onclick="scrollCarouselDay2(1)">›</button>
+            </div>
+            
+            <script>
+                const container2 = document.getElementById("day2-carousel");
+            
+                const speakerHTML2 = `
                     <div class="speaker-card">
                         <img src="assets/speakers/JerryMLSpeaker.jpg" height="200px" alt="Amon Neequaye">
                         <p>Jerry<br>(ML Speaker)</p>
@@ -143,17 +135,23 @@
                         <p>Zachariah<br>Gutierrez</p>
                     </div>
                     <div class="speaker-card">
-                        <img src="assets/speakers/placeholder_speaker.png" height="200px" alt="Julia Larina">
+                        <img src="assets/speakers/JuliaSpeaker.jpg" height="200px" alt="Julia Larina">
                         <p>Daniel<br>Maryanovsk</p>
                     </div>
-                        <div class="speaker-card">
-                            <img src="assets/speakers/placeholder_speaker.png" height="200px" alt="Anindya Basu">
-                            <p>Prince<br>Ghuman</p>
+                    <div class="speaker-card">
+                        <img src="assets/speakers/placeholder_speaker.png" height="200px" alt="Anindya Basu">
+                        <p>Prince<br>Ghuman</p>
                     </div>
-                </div>
-                <button class="carousel-btn next" onclick="scrollCarousel('day2-carousel', 1)">›</button>
-            </div>
-        </section>
+                `;
+            
+                const copies2 = 20; // Adjust as needed
+                container2.innerHTML = speakerHTML2.repeat(copies2);
+            
+                function scrollCarouselDay2(direction) {
+                    container2.scrollBy({ left: direction * scrollStep, behavior: 'smooth' });
+                }
+            </script>
+            
 
         <section id="schedule">
             <h3>Schedule</h3>
@@ -211,17 +209,41 @@
         <img src="assets/sparkles/white_sparkle_xlarge.svg" class="sparkle_a bottom_sparkle_4">
         <img src="assets/sparkles/white_sparkle_xlarge.svg" class="sparkle_b bottom_sparkle_5">
 
-        <script>
-            const totalSpeakers = speakers.length;
-const speakersPerSlide = 2;
-
-            function scrollCarousel(id, direction) {
-              const container = document.getElementById(id);
-              const cardWidth = 300; // width of each card + gap
-              container.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
-            }
-          </script>
+       <!-- <script>
+            const container = document.getElementById("day1-carousel");
+            const cardWidth = 300;
+            const scrollStep = cardWidth; // 1 card per click
+            const numCopies = 3;
           
-        
+            // Duplicate all cards for looping
+            const originalCards = Array.from(container.children);
+            for (let i = 0; i < numCopies; i++) {
+              originalCards.forEach(card => {
+                const clone = card.cloneNode(true);
+                container.appendChild(clone);
+              });
+            }
+          
+            // Set scroll position to middle set
+            container.scrollLeft = container.scrollWidth / 2;
+          
+            // Scroll handler
+            function scrollCarousel(direction) {
+              container.scrollBy({ left: direction * scrollStep, behavior: 'smooth' });
+            }
+          
+            // Reset scroll position if needed
+            container.addEventListener('scroll', () => {
+              const maxScroll = container.scrollWidth;
+              const half = maxScroll / 2;
+              const buffer = cardWidth * originalCards.length;
+          
+              if (container.scrollLeft <= buffer) {
+                container.scrollLeft += buffer;
+              } else if (container.scrollLeft >= maxScroll - buffer) {
+                container.scrollLeft -= buffer;
+              }
+            });
+          </script>   -->       
     </body>
 </html>
