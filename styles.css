@@ -73,7 +73,9 @@ img{
 
 
 
-
+#about {
+  padding-top: 300px;
+}
 
 
 
@@ -168,7 +170,7 @@ nav {
     margin-left: -20px;
     margin-top: -15px;
     font-family: "Montserrat", sans-serif;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 #day_1 {
