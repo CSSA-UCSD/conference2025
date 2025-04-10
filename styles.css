@@ -282,22 +282,26 @@ nav {
 }
 
 /* arrow button styles */
-.carousel-btn {
-  background-color: transparent;  /* No background */
+#manual_button {
   border: none;                   /* No border */
   box-shadow: none;               /* No shadow */
-  font-size: 30px;
   cursor: pointer;
-  color: #000;                    /* Or change to your desired color */
+  color: #ffffff;                    /* Or change to your desired color */
   padding: 10px;
   transition: transform 0.2s ease;
+  background-color: transparent;
+  font-size: 60px;
 }
 
-.carousel-btn:hover {
+#manual_button {
+  font-size: 120px;
+}
+
+#manual_button:hover {
   transform: scale(1.2);
 }
 
-.carousel-btn:focus {
+#manual_button:focus {
   outline: none;
   box-shadow: none;              /* Removes any focus shadow */
 }
@@ -316,8 +320,6 @@ nav {
   scroll-behavior: smooth;
   gap: 10px;
 }
-
-
 
 
 
