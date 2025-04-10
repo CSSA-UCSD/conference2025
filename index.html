@@ -72,7 +72,7 @@
           </section>
           
           <script>
-            const scrollStep = 320; // adjust based on actual card width + spacing
+            const scrollStep = 320; // Adjust based on actual card width + spacing
           
             // Day 1 Speaker Cards
             const container1 = document.getElementById("day1-carousel");
@@ -98,7 +98,7 @@
                 <p>Alan<br> (Design Speaker)</p>
               </div>
             `;
-            container1.innerHTML = speakerHTML1.repeat(3);
+            container1.innerHTML = speakerHTML1;
           
             function scrollCarouselDay1(direction) {
               container1.scrollBy({ left: direction * scrollStep, behavior: 'smooth' });
@@ -124,7 +124,7 @@
                 <p>Prince<br>Ghuman</p>
               </div>
             `;
-            container2.innerHTML = speakerHTML2.repeat(3);
+            container2.innerHTML = speakerHTML2;
           
             function scrollCarouselDay2(direction) {
               container2.scrollBy({ left: direction * scrollStep, behavior: 'smooth' });
@@ -136,7 +136,7 @@
                 <h3 id = "schedule_title">Schedule</h3>
             
                 <div class="text-box">
-                    <p id="line"><strong>Day 1:</strong> FRIDAY 4/18/2025 | 4:00-9:00pm PDT</p>
+                    <p id="line0"><i><strong>Day 1:</strong> FRIDAY 4/18/2025 | 4:00-9:00pm PDT</i></p>
                     <p id="line"><strong>4-4:10pm PDT</strong> | Welcome Introduction</p>
                     <p id="line"><strong>4:10-4:50pm PDT</strong> | Speaker 1</p>
                     <p id="line"><strong>4:55-5:40pm PDT</strong> | Speaker 2</p>
@@ -149,7 +149,7 @@
                 </div>
             
                 <div class="text-box">
-                    <p id="line"><strong>Day 2:</strong> SATURDAY 4/19/2025 | 10:00-5:00pm PDT</p>
+                    <p id="line0"><strong>Day 2:</strong> SATURDAY 4/19/2025 | 10:00-5:00pm PDT</p>
                     <p id="line"><strong>10-10:10am PDT</strong> | Welcome Introduction</p>
                     <p id="line"><strong>10:10-10:55am PDT</strong> | Speaker 1</p>
                     <p id="line"><strong>10:55-11:40am PDT</strong> | Speaker 2</p>
