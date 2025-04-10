@@ -25,6 +25,7 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth;
 
+
 }
 
 body{
@@ -102,6 +103,8 @@ nav {
     justify-content: space-between; /* Space out the logo and nav links */
     align-items: center; /* Vertically center the items */
     box-sizing: border-box;
+    z-index: 1000; /* Ensures navbar stays above other content */
+
 }
 
 /* Logo image */
@@ -247,6 +250,7 @@ nav {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
+  
 }
 
 .speaker {
@@ -319,6 +323,7 @@ nav {
   overflow-x: auto;
   scroll-behavior: smooth;
   gap: 10px;
+  width: 640px; /* ~2 cards wide (adjust to match card width + gap) */
 }
 
 
@@ -332,7 +337,19 @@ nav {
 
 
 
+
 /* Styled Box */
+
+#schedule_title {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 500;
+  margin: 10px 0 0;
+  padding-top: 100px;
+  font-family: "source-serif-4";
+  padding-top: 200px;
+}
+
 .text-box {
   border: 2px solid rgba(173, 222, 253, 1);
   border-radius: 20px;
@@ -355,6 +372,8 @@ nav {
   color: white;
   font-size: 17px;
 }
+
+
 
 
 
