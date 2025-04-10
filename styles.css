@@ -282,7 +282,7 @@ nav {
 }
 
 /* arrow button styles */
-#manual_button {
+.manual-button {
   border: none;                   /* No border */
   box-shadow: none;               /* No shadow */
   cursor: pointer;
@@ -293,15 +293,15 @@ nav {
   font-size: 60px;
 }
 
-#manual_button {
+.manual-button {
   font-size: 120px;
 }
 
-#manual_button:hover {
+.manual-button:hover {
   transform: scale(1.2);
 }
 
-#manual_button:focus {
+.manual-button:focus {
   outline: none;
   box-shadow: none;              /* Removes any focus shadow */
 }
@@ -332,30 +332,29 @@ nav {
 
 
 
-
-/* schedule */
+/* Styled Box */
 .text-box {
-    background: rgba(198, 159, 159, 0.1);
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 12px; /* Slightly rounded corners for a smoother look */
-    padding: 10px 10px; /* Increased padding for a more spacious feel */
-    width: 85%; /* Adjusted width to 60% for better centering */
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* More subtle shadow for depth */
-    margin: 20px auto; /* Added margin for spacing between elements */
+  border: 2px solid rgba(173, 222, 253, 1);
+  border-radius: 20px;
+  padding: 20px 30px;
+  width: 85%;
+  max-width: 700px;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 #line {
-    text-align: left;
-    margin-bottom: 12px; /* Added margin between lines for better readability */
-    color: #e0e0e0; /* Light color for text for better contrast */
+  text-align: left;
+  font-size: 16px;
+  color: #e0e0e0;
+  line-height: 1.6;
 }
 
 #line strong {
-    font-weight: bold;
-    font-size: 24px;
-    color: white; /* Accent color for stronger visual emphasis */
+  color: white;
+  font-size: 17px;
 }
-
 
 
 
@@ -411,11 +410,11 @@ animation: twinkle 3.5s infinite alternate ease-in-out;
 .blue_sparkle_4 { width: 20px; top: 6%; left: 70%; }
 .blue_sparkle_5 { width: 90px; top: 6%; left: 38%; }
 
-.white_sparkle_1 { width: 40px; top: 92%; left: 60%; }
-.white_sparkle_2 { width: 20px; top: 45%; left: 30%; }
-.white_sparkle_3 { width: 40px; top: 50%; left: 25%; }
-.white_sparkle_4 { width: 30px; top: 60%; left: 90%; }
-.white_sparkle_5 { width: 10px; top: 55%; left: 52%; }
+.white_sparkle_1 { width: 40px; top: 82%; left: 60%; }
+.white_sparkle_2 { width: 20px; top: 35%; left: 30%; }
+.white_sparkle_3 { width: 40px; top: 40%; left: 25%; }
+.white_sparkle_4 { width: 30px; top: 50%; left: 90%; }
+.white_sparkle_5 { width: 10px; top: 45%; left: 52%; }
 
 .shimmer {
     position: absolute;
