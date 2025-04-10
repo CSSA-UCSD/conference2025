@@ -248,6 +248,7 @@ nav {
   justify-content: space-around;
   margin-top: 20px;
   
+  
 }
 
 .speaker {
@@ -255,11 +256,13 @@ nav {
   padding: 10px;
   background-color: #fff;
   border-radius: 8px;
+  
 }
 
 .speaker img {
   border-radius: 8px;
   margin-bottom: 10px;
+  
 }
 
 .speaker-card p {
@@ -280,6 +283,7 @@ nav {
   padding-left: 100px;
   font-weight: 500;
   margin: 10px 0 0;
+  
 }
 
 /* arrow button styles */
@@ -308,21 +312,21 @@ nav {
 }
 
 
-/* optional: make buttons consistent and spacing nice */
 .carousel-wrapper {
   display: flex;
   align-items: center;
-  gap: 10px;
+  overflow: hidden;
+  position: relative; /* Needed for z-index to work */
+  z-index: 10;         /* Make sure it's above background elements */
+  
 }
 
-.carousel {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  gap: 10px;
-  width: 640px; /* ~2 cards wide (adjust to match card width + gap) */
+.speaker-card {
+  min-width: 320px;
+  margin-right: 20px;
+  flex-shrink: 0;
+  text-align: center;
 }
-
 
 
 
@@ -356,13 +360,20 @@ nav {
   margin: 30px auto;
   background-color: rgba(255, 255, 255, 0.05);
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  
 }
 
+
+#line0 {
+  font-family: "source-serif-4";
+  font-size: 30px;
+}
 #line {
   text-align: left;
   font-size: 16px;
   color: #e0e0e0;
   line-height: 1.6;
+  
 }
 
 #line strong {
