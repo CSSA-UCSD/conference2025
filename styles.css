@@ -158,15 +158,16 @@ nav {
 }
 
 #introsparkle img {
-  margin-left: -50px;
-  margin-top: 40px;
+  margin-left: -25px;
+  margin-top: 37px;
+  height: 180px;
 }
 
 
 
 #intro1 {
     font-family: "Passions Conflict", cursive;
-    font-size: 110px;
+    font-size: 90px;
     text-align: center;
     margin-left: 20px;
     margin-top: -5px;
@@ -179,7 +180,7 @@ nav {
     font-weight: 500;
     text-align: center;
     margin-left: -20px;
-    margin-top: -55px;
+    margin-top: -25px;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 80px;
     letter-spacing: 4px;
@@ -271,11 +272,16 @@ nav {
   
 }
 
-.speaker img {
+.speaker-card img {
   border-radius: 8px;
   margin-bottom: 10px;
-  
+  height: 100%; /* Make the image fill the available height in the parent */
+  width: 100%;  /* Make the image responsive */
+  object-fit: cover; /* Maintain the aspect ratio and cover the area */
 }
+
+
+
 
 .speaker-card p {
   font-size: 36px;
@@ -333,10 +339,11 @@ nav {
 }
 
 .speaker-card {
-  min-width: 320px;
   margin-right: 20px;
   flex-shrink: 0;
   text-align: center;
+  height: auto; /* Ensure the card height adjusts to its content */
+  padding: 0;   /* Reset padding to ensure the image can grow */
 }
 
 
