@@ -60,7 +60,7 @@
             <h3>Speakers</h3>
           
             <!-- Day 1 -->
-            <h4 id="daytitle">Day 1</h4>
+            <h4 id="daytitle">Day 1 : Design and Interaction</h4>
             <div class="carousel-wrapper">
               <button class="manual-button" onclick="scrollCarouselDay1(-1)">‹</button>
               <div class="carousel" id="day1-carousel"></div>
@@ -68,7 +68,7 @@
             </div>
           
             <!-- Day 2 -->
-            <h4 id="daytitle">Day 2</h4>
+            <h4 id="daytitle">Day 2 : ML, Language, & Neuro</h4>
             <div class="carousel-wrapper">
               <button class="manual-button" onclick="scrollCarouselDay2(-1)">‹</button>
               <div class="carousel" id="day2-carousel"></div>
@@ -105,39 +105,53 @@
             `;
             container1.innerHTML = speakerHTML1;
           
-            function scrollCarouselDay1(direction) {
-              container1.scrollBy({ left: direction * scrollStep, behavior: 'smooth' });
-            }
+            // function scrollCarouselDay1(direction) {
+            //   container1.scrollBy({ left: direction * scrollStep, behavior: 'smooth' });
+            // }
           
+            function scrollCarouselDay1(direction) {
+  const maxScrollLeft = container1.scrollWidth - container1.clientWidth;
+  let newScrollLeft = container1.scrollLeft + direction * scrollStep;
+  newScrollLeft = Math.max(0, Math.min(newScrollLeft, maxScrollLeft));
+  container1.scrollTo({ left: newScrollLeft, behavior: 'smooth' });
+}
+
             // Day 2 Speaker Cards
             const container2 = document.getElementById("day2-carousel");
             const speakerHTML2 = `
               <div class="speaker-card">
                 <img src="assets/speakers/d2jerry.png" style="height: 700px;" alt="jerry">
-                <p><b>Jerry Ricario </b><br>Profession</p>
+                <p><b>Jerry Ricario </b><br>Systems Engineering Manager @ Overair</p>
               </div>
               <div class="speaker-card">
                 <img src="assets/speakers/d2zachariah.png" style="height: 700px;" alt="Zachariah Gutierrez">
-                <p><b>Zachariah Gutierrez </b><br>Profession</p>
+                <p><b>Zachariah Gutierrez </b><br>Lead Data Scientist @ Booz Allen Hamilton </p>
               </div>
               <div class="speaker-card">
                 <img src="assets/speakers/d2daniel.png" style="height: 700px;" alt="Daniel Maryanovsk">
-                <p><b>Daniel Maryanovsky</b><br>Profession</p>
+                <p><b>Daniel Maryanovsky</b><br>Chief Data Scientist @ W8less.io</p>
               </div>
                 <div class="speaker-card">
                 <img src="assets/speakers/d2monica.png" style="height: 700px;" alt="Monica Shen">
-                <p><b>Monica Shen</b><br>Profession</p>
+                <p><b>Monica Shen</b><br>PhD Student @ UCSD</p>
               </div>
                <div class="speaker-card">
                 <img src="assets/speakers/d2prince.png" style="height: 700px;" alt="Prince Ghuman">
-                <p><b>Prince Ghuman</b><br>Profession</p>
+                <p><b>Prince Ghuman</b><br>VP Marketing
+@ Turbine Capital</p>
               </div>
             `;
             container2.innerHTML = speakerHTML2;
           
+            // function scrollCarouselDay2(direction) {
+            //   container2.scrollBy({ left: direction * scrollStep, behavior: 'smooth' });
+            // }
             function scrollCarouselDay2(direction) {
-              container2.scrollBy({ left: direction * scrollStep, behavior: 'smooth' });
-            }
+  const maxScrollLeft = container2.scrollWidth - container2.clientWidth;
+  let newScrollLeft = container2.scrollLeft + direction * scrollStep;
+  newScrollLeft = Math.max(0, Math.min(newScrollLeft, maxScrollLeft));
+  container2.scrollTo({ left: newScrollLeft, behavior: 'smooth' });
+}
           </script>
           
             <section id="schedule">
