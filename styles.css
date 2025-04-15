@@ -260,7 +260,7 @@ nav {
 }
 
 .speaker-card p b {
-  font-size: 33px; /* make it slightly bigger */
+  font-size: 31px; /* make it slightly bigger */
 }
 
 .speaker-card p {
@@ -317,7 +317,7 @@ nav {
   border: none;                   /* No border */
   box-shadow: none;               /* No shadow */
   cursor: pointer;
-  color: #2f3c26;                    /* Or change to your desired color */
+  color: #ffffff;                    /* Or change to your desired color */
   padding: 10px;
   transition: transform 0.2s ease;
   background-color: transparent;
