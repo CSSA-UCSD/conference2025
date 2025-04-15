@@ -258,6 +258,7 @@ nav {
 /* about section */
 #about {
   margin-top: -50px;
+  margin-bottom: -30px;
 }
 
 #about p{
@@ -281,7 +282,7 @@ nav {
 
 
 /* speakers */
-#daytitle {
+#daytitle {  
   font-style: italic;
   font-size: 40px;
   text-align: left;
