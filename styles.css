@@ -338,6 +338,11 @@ nav {
   box-shadow: none;              /* Removes any focus shadow */
 }
 
+#speakers-titles {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
 
 
 
@@ -355,7 +360,7 @@ nav {
   text-align: center;
   font-weight: 500;
   margin: 10px 0 0;
-  padding-top: 100px;
+  padding-top: 60px;
   font-family: "source-serif-4";
   padding-top: 130px;
 }
