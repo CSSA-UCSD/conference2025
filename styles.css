@@ -260,11 +260,11 @@ nav {
 }
 
 .speaker-card p b {
-  font-size: 36px; /* make it slightly bigger */
+  font-size: 31px; /* make it slightly bigger */
 }
 
 .speaker-card p {
-  font-size: 22px;
+  font-size: 20px;
   color: white;
   margin-top: 12px; 
 }
