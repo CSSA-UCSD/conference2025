@@ -317,7 +317,7 @@ nav {
   border: none;                   /* No border */
   box-shadow: none;               /* No shadow */
   cursor: pointer;
-  color: #ffffff;                    /* Or change to your desired color */
+  color: #710909;                    /* Or change to your desired color */
   padding: 10px;
   transition: transform 0.2s ease;
   background-color: transparent;
@@ -339,7 +339,7 @@ nav {
 }
 
 #speakers-titles {
-  font-size: 17px;
+  font-size: 18px;
   padding-top: 10px;
   padding-bottom: 50px;
 }
